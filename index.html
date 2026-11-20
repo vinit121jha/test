@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinit Ranjan Jha — Digital Marketing Specialist</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    if (localStorage.getItem('vinit_theme') === 'light') {
+      document.documentElement.classList.add('light');
+    }
+  </script>
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">V</div>
+        <span>VinitJha</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+        <a href="contact.html" class="nav-cta nav-cta-desktop">Get in Touch →</a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero-section" id="heroSection">
+    <!-- Antigravity Exact Particle Vortex Canvas -->
+    <canvas id="antigravityCanvas" class="hero-canvas"></canvas>
+
+    <div class="container flex-center" style="position: relative; z-index: 2;">
+      <div class="about-badge">📈 Digital Marketing Specialist</div>
+      
+      <h1 class="text-hero text-center">
+        Growing Brands<br/>in the Digital World
+      </h1>
+
+      <p class="text-subtitle mt-3">
+        I'm <strong>Vinit Ranjan Jha</strong> — I help businesses boost their online presence through 
+        data-driven strategies, compelling content, and performance-focused campaigns.
+      </p>
+
+      <div class="btn-row">
+        <a href="about.html" class="btn-primary">Know More About Me →</a>
+        <a href="contact.html" class="btn-outline">Contact Me</a>
+      </div>
+
+      <!-- Feature checklist -->
+      <div class="checklist">
+        <span class="check-item"><span class="check-icon">✓</span> SEO & SEM</span>
+        <span class="check-item"><span class="check-icon">✓</span> Social Media Marketing</span>
+        <span class="check-item"><span class="check-icon">✓</span> PPC & Paid Ads</span>
+        <span class="check-item"><span class="check-icon">✓</span> Content Strategy</span>
+        <span class="check-item"><span class="check-icon">✓</span> Email Automation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE — SKILLS ═══ -->
+  <section style="padding: 2rem 0 4rem;">
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <!-- Set 1 -->
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#4285f4"></span><span class="marquee-dot" style="background:#ea4335"></span><span class="marquee-dot" style="background:#fbbc05"></span></span>Google Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#1877f2"></span><span class="marquee-dot" style="background:#42b72a"></span><span class="marquee-dot" style="background:#f7b928"></span></span>Meta Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#e1306c"></span><span class="marquee-dot" style="background:#f77737"></span><span class="marquee-dot" style="background:#833ab4"></span></span>Instagram Marketing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#0a66c2"></span><span class="marquee-dot" style="background:#0073b1"></span><span class="marquee-dot" style="background:#00a0dc"></span></span>LinkedIn Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff4500"></span><span class="marquee-dot" style="background:#ff6600"></span><span class="marquee-dot" style="background:#ff8800"></span></span>SEO Optimization</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ffe01b"></span><span class="marquee-dot" style="background:#ff6a00"></span><span class="marquee-dot" style="background:#d63384"></span></span>Email Marketing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#00c4cc"></span><span class="marquee-dot" style="background:#7b2ff7"></span><span class="marquee-dot" style="background:#ff6f61"></span></span>Canva Design</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff4713"></span><span class="marquee-dot" style="background:#3ddc84"></span><span class="marquee-dot" style="background:#4285f4"></span></span>Analytics</span>
+        <!-- Set 2 (duplicate for seamless loop) -->
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#4285f4"></span><span class="marquee-dot" style="background:#ea4335"></span><span class="marquee-dot" style="background:#fbbc05"></span></span>Google Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#1877f2"></span><span class="marquee-dot" style="background:#42b72a"></span><span class="marquee-dot" style="background:#f7b928"></span></span>Meta Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#e1306c"></span><span class="marquee-dot" style="background:#f77737"></span><span class="marquee-dot" style="background:#833ab4"></span></span>Instagram Marketing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#0a66c2"></span><span class="marquee-dot" style="background:#0073b1"></span><span class="marquee-dot" style="background:#00a0dc"></span></span>LinkedIn Ads</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff4500"></span><span class="marquee-dot" style="background:#ff6600"></span><span class="marquee-dot" style="background:#ff8800"></span></span>SEO Optimization</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ffe01b"></span><span class="marquee-dot" style="background:#ff6a00"></span><span class="marquee-dot" style="background:#d63384"></span></span>Email Marketing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#00c4cc"></span><span class="marquee-dot" style="background:#7b2ff7"></span><span class="marquee-dot" style="background:#ff6f61"></span></span>Canva Design</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff4713"></span><span class="marquee-dot" style="background:#3ddc84"></span><span class="marquee-dot" style="background:#4285f4"></span></span>Analytics</span>
+      </div>
+    </div>
+    <div style="height: 1rem;"></div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track reverse">
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff6250"></span><span class="marquee-dot" style="background:#ff9472"></span><span class="marquee-dot" style="background:#1a1a2e"></span></span>HubSpot</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#38bdf8"></span><span class="marquee-dot" style="background:#0ea5e9"></span><span class="marquee-dot" style="background:#0284c7"></span></span>WordPress</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#2563eb"></span><span class="marquee-dot" style="background:#7c3aed"></span><span class="marquee-dot" style="background:#db2777"></span></span>Hootsuite</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#f97316"></span><span class="marquee-dot" style="background:#3b82f6"></span><span class="marquee-dot" style="background:#10b981"></span></span>SEMrush</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#2563eb"></span><span class="marquee-dot" style="background:#f59e0b"></span><span class="marquee-dot" style="background:#14b8a6"></span></span>Ahrefs</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ffe01b"></span><span class="marquee-dot" style="background:#4f46e5"></span><span class="marquee-dot" style="background:#ec4899"></span></span>Mailchimp</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#e44332"></span><span class="marquee-dot" style="background:#2965f1"></span><span class="marquee-dot" style="background:#264de4"></span></span>A/B Testing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#22c55e"></span><span class="marquee-dot" style="background:#3b82f6"></span><span class="marquee-dot" style="background:#a855f7"></span></span>Lead Generation</span>
+        <!-- Duplicate -->
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ff6250"></span><span class="marquee-dot" style="background:#ff9472"></span><span class="marquee-dot" style="background:#1a1a2e"></span></span>HubSpot</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#38bdf8"></span><span class="marquee-dot" style="background:#0ea5e9"></span><span class="marquee-dot" style="background:#0284c7"></span></span>WordPress</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#2563eb"></span><span class="marquee-dot" style="background:#7c3aed"></span><span class="marquee-dot" style="background:#db2777"></span></span>Hootsuite</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#f97316"></span><span class="marquee-dot" style="background:#3b82f6"></span><span class="marquee-dot" style="background:#10b981"></span></span>SEMrush</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#2563eb"></span><span class="marquee-dot" style="background:#f59e0b"></span><span class="marquee-dot" style="background:#14b8a6"></span></span>Ahrefs</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#ffe01b"></span><span class="marquee-dot" style="background:#4f46e5"></span><span class="marquee-dot" style="background:#ec4899"></span></span>Mailchimp</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#e44332"></span><span class="marquee-dot" style="background:#2965f1"></span><span class="marquee-dot" style="background:#264de4"></span></span>A/B Testing</span>
+        <span class="marquee-pill"><span class="marquee-dots"><span class="marquee-dot" style="background:#22c55e"></span><span class="marquee-dot" style="background:#3b82f6"></span><span class="marquee-dot" style="background:#a855f7"></span></span>Lead Generation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="glow-section">
+    <div class="container">
+      <h2 class="text-section section-spacing">Powerful Digital Marketing Services</h2>
+      <p class="text-subtitle mb-4">End-to-end digital solutions to take your brand from invisible to unstoppable.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🔍</div>
+          <h3>SEO Optimization</h3>
+          <p>Dominate search rankings with on-page, off-page, and technical SEO strategies that drive consistent organic traffic.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Social Media Marketing</h3>
+          <p>Build a loyal community on Instagram, LinkedIn, Facebook & more with targeted content plans and growth strategies.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>PPC & Paid Advertising</h3>
+          <p>Run high-ROI Google Ads and Meta Ads campaigns that bring the right audience at the right cost per acquisition.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✍️</div>
+          <h3>Content Marketing</h3>
+          <p>Create blogs, videos & infographics that educate audiences, build authority, and drive meaningful conversions.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📧</div>
+          <h3>Email Automation</h3>
+          <p>Craft high-converting email campaigns and automated drip sequences that nurture leads into paying customers.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Analytics & Reporting</h3>
+          <p>Track KPIs, analyse campaign data with GA4 & SEMrush, and deliver clear reports to maximise ROI continuously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW I WORK ═══ -->
+  <section>
+    <div class="container">
+      <h2 class="text-section section-spacing">Three Steps to Results</h2>
+      <p class="text-subtitle mb-4">A proven framework I follow for every project.</p>
+
+      <div class="grid-3">
+        <div class="card" style="text-align: center;">
+          <div class="step-number">01</div>
+          <h3>Audit & Strategy</h3>
+          <p>Deep-dive into your current digital presence, competitors, and audience to create a tailored growth roadmap.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div class="step-number">02</div>
+          <h3>Execute & Optimize</h3>
+          <p>Launch campaigns across SEO, social, ads & email — then continuously A/B test and optimise for performance.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div class="step-number">03</div>
+          <h3>Report & Scale</h3>
+          <p>Deliver transparent reports with actionable insights, then scale what works to accelerate your growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="glow-section">
+    <div class="container">
+      <div class="flex-center">
+        <span class="badge" style="margin-bottom: 0.75rem;">📂 Portfolio Showcase</span>
+        <h2 class="text-section section-spacing">Featured Projects</h2>
+        <p class="text-subtitle mb-4">
+          Digital marketing case studies and live campaigns currently in development.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Project 1 -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <span class="card-icon" style="margin-bottom:0;">🔍</span>
+              <span class="badge" style="font-size:0.7rem; color:#a1a1aa; border-color:rgba(255,255,255,0.15);">Coming Soon</span>
+            </div>
+            <h3>Organic SEO & Traffic Growth</h3>
+            <p>On-page optimization, keyword research, and high-authority backlink strategy designed to boost organic search rankings.</p>
+          </div>
+          <div style="margin-top:1.25rem; display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="badge" style="font-size:0.7rem;">SEO</span>
+            <span class="badge" style="font-size:0.7rem;">Content</span>
+            <span class="badge" style="font-size:0.7rem;">GA4</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <span class="card-icon" style="margin-bottom:0;">📱</span>
+              <span class="badge" style="font-size:0.7rem; color:#a1a1aa; border-color:rgba(255,255,255,0.15);">Coming Soon</span>
+            </div>
+            <h3>Social Media Brand Presence</h3>
+            <p>End-to-end social media growth blueprint focusing on audience engagement, viral reels, and community building.</p>
+          </div>
+          <div style="margin-top:1.25rem; display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="badge" style="font-size:0.7rem;">Instagram</span>
+            <span class="badge" style="font-size:0.7rem;">LinkedIn</span>
+            <span class="badge" style="font-size:0.7rem;">Canva</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <span class="card-icon" style="margin-bottom:0;">💰</span>
+              <span class="badge" style="font-size:0.7rem; color:#a1a1aa; border-color:rgba(255,255,255,0.15);">Coming Soon</span>
+            </div>
+            <h3>Paid Ads & Lead Generation</h3>
+            <p>Targeted Google Ads and Meta Ads campaigns built with high-converting landing pages and automated email follow-ups.</p>
+          </div>
+          <div style="margin-top:1.25rem; display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="badge" style="font-size:0.7rem;">Meta Ads</span>
+            <span class="badge" style="font-size:0.7rem;">Google Ads</span>
+            <span class="badge" style="font-size:0.7rem;">PPC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BOTTOM CTA ═══ -->
+  <section class="glow-section">
+    <div class="container flex-center">
+      <h2 class="text-section section-spacing">Ready to Grow Your Brand?</h2>
+      <p class="text-subtitle">
+        Let's build a digital strategy that drives real, measurable results for your business.
+      </p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn-primary">Let's Talk →</a>
+        <a href="about.html" class="btn-outline">Learn More About Me</a>
+      </div>
+      <p class="text-xs text-muted mt-3" style="opacity:0.6;">No commitment required. Free consultation.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">V</div>
+            <span>VinitJha</span>
+          </div>
+          <p>Digital Marketing Specialist helping brands grow their online presence through data-driven campaigns, SEO, and paid advertising.</p>
+          <div class="footer-socials">
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter / X">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">SEO</a>
+          <a href="#services">Social Media</a>
+          <a href="#services">PPC Ads</a>
+          <a href="#services">Email Marketing</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Vinit Ranjan Jha. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Theme Toggle (Dark / Light) ──
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('vinit_theme') || 'dark';
+
+    if (currentTheme === 'light') {
+      document.documentElement.classList.add('light');
+      themeToggleBtn.textContent = '☀️';
+    } else {
+      document.documentElement.classList.remove('light');
+      themeToggleBtn.textContent = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      if (isLight) {
+        localStorage.setItem('vinit_theme', 'light');
+        themeToggleBtn.textContent = '☀️';
+      } else {
+        localStorage.setItem('vinit_theme', 'dark');
+        themeToggleBtn.textContent = '🌙';
+      }
+    });
+
+    // Auto-close mobile menu on link click
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // ── Antigravity Google Exact Particle Vortex System ──
+    const canvas = document.getElementById('antigravityCanvas');
+    const heroSec = document.getElementById('heroSection');
+    const ctx = canvas.getContext('2d');
+
+    let width = 0, height = 0;
+    let dpr = window.devicePixelRatio || 1;
+
+    // Palette: Light Mode (Google vibrant palette) vs Dark Mode (Electric neon glow)
+    const lightColors = ['#EA4335', '#4285F4', '#FBBC05', '#34A853', '#9333EA', '#E11D48', '#2563EB', '#D97706'];
+    const darkColors  = ['#00F0FF', '#FF007F', '#A855F7', '#FFB800', '#00FF9D', '#38BDF8', '#F43F5E', '#818CF8'];
+
+    let particles = [];
+    const NUM_PARTICLES = 360;
+
+    function resize() {
+      width = heroSec.offsetWidth;
+      height = heroSec.offsetHeight;
+      dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function initParticles() {
+      particles = [];
+      const isMobile = width < 768;
+      const minR = isMobile ? 120 : 210;
+      const maxR = isMobile ? 420 : 860;
+
+      for (let i = 0; i < NUM_PARTICLES; i++) {
+        // Distance distributed in vortex layers
+        const norm = Math.pow(Math.random(), 0.78);
+        const r = minR + norm * (maxR - minR);
+        const baseAngle = Math.random() * Math.PI * 2;
+        const colorIdx = Math.floor(Math.random() * lightColors.length);
+
+        particles.push({
+          r: r,
+          baseR: r,
+          angle: baseAngle,
+          speed: (0.0006 + Math.random() * 0.001) * (Math.random() > 0.05 ? 1 : -1),
+          length: 7 + Math.random() * 9,
+          width: 2.8 + Math.random() * 1.6,
+          colorIdx: colorIdx,
+          alpha: 0.55 + Math.random() * 0.45,
+          ox: 0,
+          oy: 0,
+          vx: 0,
+          vy: 0
+        });
+      }
+    }
+
+    let mousePos = { x: -9999, y: -9999, active: false };
+
+    heroSec.addEventListener('mousemove', (e) => {
+      const rect = heroSec.getBoundingClientRect();
+      mousePos.x = e.clientX - rect.left;
+      mousePos.y = e.clientY - rect.top;
+      mousePos.active = true;
+    });
+
+    heroSec.addEventListener('mouseleave', () => {
+      mousePos.active = false;
+    });
+
+    function animate() {
+      // Disable on mobile/phone screens completely
+      if (window.innerWidth <= 768) {
+        ctx.clearRect(0, 0, width, height);
+        requestAnimationFrame(animate);
+        return;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+
+      const isLight = document.documentElement.classList.contains('light');
+      const cx = width / 2;
+      const cy = height * 0.46; // Center directly behind the hero title
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        // Orbit update
+        p.angle += p.speed;
+
+        // Base elliptical coordinates matching screen ratio
+        const baseX = cx + Math.cos(p.angle) * p.r;
+        const baseY = cy + Math.sin(p.angle) * (p.r * 0.58);
+
+        // Interactive mouse physics
+        if (mousePos.active) {
+          const dx = (baseX + p.ox) - mousePos.x;
+          const dy = (baseY + p.oy) - mousePos.y;
+          const dist = Math.hypot(dx, dy);
+          const maxDist = 200;
+
+          if (dist < maxDist && dist > 0) {
+            const force = (1 - dist / maxDist) * 32;
+            p.vx += (dx / dist) * force * 0.12;
+            p.vy += (dy / dist) * force * 0.12;
+          }
+        }
+
+        // Spring damping back to orbit
+        p.ox += p.vx;
+        p.oy += p.vy;
+        p.vx *= 0.86;
+        p.vy *= 0.86;
+        p.ox *= 0.92;
+        p.oy *= 0.92;
+
+        const posX = baseX + p.ox;
+        const posY = baseY + p.oy;
+
+        // Tangent orientation (vortex swirling dash angle)
+        const tangent = p.angle + Math.PI / 2 + 0.32;
+
+        ctx.save();
+        ctx.translate(posX, posY);
+        ctx.rotate(tangent);
+
+        ctx.beginPath();
+        ctx.moveTo(-p.length / 2, 0);
+        ctx.lineTo(p.length / 2, 0);
+
+        const strokeColor = isLight ? lightColors[p.colorIdx] : darkColors[p.colorIdx];
+        ctx.strokeStyle = strokeColor;
+        ctx.lineWidth = p.width;
+        ctx.lineCap = 'round';
+        ctx.globalAlpha = p.alpha;
+
+        if (!isLight) {
+          ctx.shadowColor = strokeColor;
+          ctx.shadowBlur = 8;
+        }
+
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', () => {
+      resize();
+      initParticles();
+    });
+
+    resize();
+    initParticles();
+    requestAnimationFrame(animate);
+  </script>
+
+</body>
+</html>

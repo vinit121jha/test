@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Vinit Ranjan Jha</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    if (localStorage.getItem('vinit_theme') === 'light') {
+      document.documentElement.classList.add('light');
+    }
+  </script>
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">V</div>
+        <span>VinitJha</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+        <a href="contact.html" class="nav-cta nav-cta-desktop">Get in Touch →</a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ CONTACT HERO ═══ -->
+  <section class="hero-section glow-section">
+    <div class="container flex-center">
+      <h1 class="text-hero text-center" style="font-size: 2.5rem;">Get in Touch</h1>
+      <p class="text-subtitle mt-2">Have a project in mind? Fill out the form below and I'll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT FORM ═══ -->
+  <section style="padding-top: 1rem;">
+    <div class="container" style="max-width: 540px;">
+      <div class="card contact-card">
+
+        <form id="contactForm" action="https://formsubmit.co/vinitjha003@gmail.com" method="POST" novalidate>
+
+          <!-- FormSubmit Configuration Fields -->
+          <input type="hidden" name="_subject" value="New Website Inquiry — Vinit Ranjan Jha" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Anti-Bot Honeypot (FormSubmit native _honey field) -->
+          <input type="text" name="_honey" id="_honey" style="display:none !important;" tabindex="-1" autocomplete="off" />
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Enter your full name" required />
+          </div>
+
+          <!-- Age -->
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input class="form-input" type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required />
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="gender-group">
+              <div class="gender-option">
+                <input type="radio" id="male" name="gender" value="Male" required />
+                <label for="male">♂ Male</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">♀ Female</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="other" name="gender" value="Other" />
+                <label for="other">⚧ Other</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\s\-]{7,15}" required />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email ID</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+
+          <!-- Human Verification Check (Anti-Bot Math Challenge) -->
+          <div class="form-group">
+            <label for="captchaAnswer" id="captchaLabel">Human Check: 3 + 4 = ?</label>
+            <input class="form-input" type="number" id="captchaAnswer" placeholder="Enter answer to verify you're human" required />
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+            Submit →
+          </button>
+
+          <div class="success-msg" id="successMsg">✅ Thank you! Your message has been sent to Vinit.</div>
+          <div id="errorMsg" style="display:none; text-align:center; padding:12px; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); border-radius:10px; color:#f87171; font-weight:600; margin-top:1rem; font-size:0.9rem;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">V</div>
+            <span>VinitJha</span>
+          </div>
+          <p>Digital Marketing Specialist helping brands grow their online presence through data-driven campaigns, SEO, and paid advertising.</p>
+          <div class="footer-socials">
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Twitter / X">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="index.html#services">SEO</a>
+          <a href="index.html#services">Social Media</a>
+          <a href="index.html#services">PPC Ads</a>
+          <a href="index.html#services">Email Marketing</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Vinit Ranjan Jha. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── FormSubmit Configuration ──
+    const FORMSUBMIT_EMAIL = "vinitjha003@gmail.com";
+    const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`;
+
+    // ── Anti-Bot 1: Human Verification Math Challenge ──
+    let num1 = Math.floor(Math.random() * 8) + 2;
+    let num2 = Math.floor(Math.random() * 8) + 1;
+    let correctAnswer = num1 + num2;
+    document.getElementById("captchaLabel").textContent = `Human Check: ${num1} + ${num2} = ?`;
+
+    // ── Anti-Bot 2: Time Gate (Bots submit in milliseconds) ──
+    const pageLoadTime = Date.now();
+
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const successMsg = document.getElementById("successMsg");
+    const errorMsg = document.getElementById("errorMsg");
+
+    function showError(text) {
+      errorMsg.textContent = text;
+      errorMsg.style.display = "block";
+      successMsg.style.display = "none";
+      setTimeout(() => { errorMsg.style.display = "none"; }, 5000);
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const age = document.getElementById("age").value.trim();
+      const gender = document.querySelector('input[name="gender"]:checked');
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const userCaptcha = document.getElementById("captchaAnswer").value.trim();
+      const honeypot = document.getElementById("_honey").value.trim();
+
+      // 1. Basic validation
+      if (!name || !age || !gender || !phone || !email) {
+        showError("Please fill in all required fields.");
+        return;
+      }
+
+      // 2. Anti-Bot: Honeypot check
+      if (honeypot !== "") {
+        console.warn("Bot submission blocked via honeypot.");
+        showError("Spam detected. Submission blocked.");
+        return;
+      }
+
+      // 3. Anti-Bot: Fast-submission check (< 2 seconds is bot behavior)
+      const timeElapsed = (Date.now() - pageLoadTime) / 1000;
+      if (timeElapsed < 2.0) {
+        showError("Please take a moment before submitting.");
+        return;
+      }
+
+      // 4. Anti-Bot: Human math challenge validation
+      if (parseInt(userCaptcha, 10) !== correctAnswer) {
+        showError("Incorrect human check answer. Please try again.");
+        return;
+      }
+
+      // Prepare FormSubmit payload
+      const payload = {
+        "Full Name": name,
+        "Age": age,
+        "Gender": gender.value,
+        "Phone Number": phone,
+        "Email ID": email,
+        "_subject": "New Contact Lead — Vinit Ranjan Jha",
+        "_template": "table"
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      try {
+        const response = await fetch(FORMSUBMIT_ENDPOINT, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (response.ok && (result.success === "true" || result.success === true)) {
+          successMsg.style.display = "block";
+          errorMsg.style.display = "none";
+          form.reset();
+
+          // Generate new captcha
+          num1 = Math.floor(Math.random() * 8) + 2;
+          num2 = Math.floor(Math.random() * 8) + 1;
+          correctAnswer = num1 + num2;
+          document.getElementById("captchaLabel").textContent = `Human Check: ${num1} + ${num2} = ?`;
+
+          setTimeout(() => { successMsg.style.display = "none"; }, 6000);
+        } else {
+          showError(result.message || "Submission failed. Please check your email configuration.");
+        }
+      } catch (err) {
+        showError("Network error. Please try again.");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit →";
+      }
+    });
+
+    // ── Theme Toggle (Dark / Light) ──
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('vinit_theme') || 'dark';
+
+    if (currentTheme === 'light') {
+      document.documentElement.classList.add('light');
+      themeToggleBtn.textContent = '☀️';
+    } else {
+      document.documentElement.classList.remove('light');
+      themeToggleBtn.textContent = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      if (isLight) {
+        localStorage.setItem('vinit_theme', 'light');
+        themeToggleBtn.textContent = '☀️';
+      } else {
+        localStorage.setItem('vinit_theme', 'dark');
+        themeToggleBtn.textContent = '🌙';
+      }
+    });
+
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
